@@ -3,23 +3,23 @@
   "version": "1.0.0",
   "description": "frontend-learning",
   "main": "index.js",
-  "browserlist": {
-    "ie": "11",
-    "iOS": "10",
-    "android": "4.4"
-  },
+  "browserslist": [
+    "ie 11",
+    "iOS 10",
+    "Android 4.4"
+  ],
   "scripts": {
     "start": "npm-run-all -p bs stylus",
     "bs": "browser-sync start --config bs-config.js",
     "stylus": "stylus -w public/css/stylus -o public/css --sourcemap-inline",
-    "postcss": "postcss public/css -o public/css -c postcss.config.js",
+    "postcss": "postcss public/css/ -d public/css -c postcss.config.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "add": "^2.0.6",
-    "autoprefixer": "^10.0.1",
+    "autoprefixer": "9.1.5",
     "browser-sync": "^2.26.13",
     "npm-run-all": "^4.1.5",
     "postcss-cli": "^8.1.0",
